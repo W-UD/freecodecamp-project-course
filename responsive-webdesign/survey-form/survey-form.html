@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form Project</title>
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+    <body>
+      <main>
+        <h1 id="title">Seeking Free Courses (Survey Form)</h1>
+        <p id="description"><i>Help me know about Free Courses websites that worth the skills i am trying to achieve.</i></p>
+        
+        <!--FORM-->
+        <form id="survey-form" action="wahyudinyahya234@gmail.com" method="post">
+            <!--PROFILE-->
+            <fieldset>
+                <label for="name" id="name-label">Name: <input type="text" id="name" required placeholder="Enter your name" class="profile"></label>
+                <label for="email" id="email-label">Email: <input type="email" id="email" required placeholder="Enter your email" class="profile"></label>
+                <label for="age" id="number-label">Age (optional): 
+                <input type="number" id="number" min="13" max="100" placeholder="Enter your age" name="age" class="profile">
+                </label>
+            </fieldset>
+        
+            <!--KNOWING WEBSITES COURSES-->
+            <fieldset>
+                <label for="dropdown">Do you know these websites that provides free courses on programming?
+                <select id="dropdown" name="knowing" value="knowing" required>
+                    <option class="select-opacity">Choose one you recommend the most</option>
+                    <option>FreeCodeCamp</option>
+                    <option>The Odin Project</option>
+                    <option>Sololearn</option>
+                    <option>MDN Web Development</option>
+                    <option>Khan Academy</option>
+                </select>
+                </label>
+            </fieldset>
+            
+            <!--RECOMENDATION-->
+            <fieldset>
+                <legend>How much helpful the website to you ?</legend> 
+                <label for="100"><input type="radio" id="100" name="visitor-recommendation" value="definitely" class="recommendation" checked>Fantastic</label>
+                <label for="good"><input type="radio" id="good" name="visitor-recommendation" value="maybe" class="recommendation">Good</label>
+                <label for="not-really"><input type="radio" id="not-really" name="visitor-recommendation" value="not-sure" class="recommendation">Not really good</label>
+            </fieldset>
+            
+            <!--FAVORITE FEATURE -->
+            <fieldset>
+                <label for="favorite-feature">What is your favorite courses curriculums of the website?
+                    <select id="dropdown1" name="favorite-feature" value="favorite-feature">
+                        <option class="select-opacity">Select an option</option>
+                        <option>Web development</option>
+                        <option>Software Engineering</option>
+                        <option>Artificial Intelligence</option>
+                        <option>other</option>
+                    </select>
+                </label>
+            </fieldset>
+            
+            <fieldset class="suggestion">
+                <legend>Except the website you choose before, select another websites that will help improving programming skills? (Check all that apply) </legend>
+                <label for="freecodecamp"><input type="checkbox" id="freecodecamp" name="improvement-request" value="freecodecamp" class="suggestion">Freecodecamp</label>
+                <label for="sololearn"><input type="checkbox" id="sololearn" name="improvement-request" value="sololearn" class="suggestion">Sololearn</label>
+                <label for="theodinproject"><input type="checkbox" id="theodinproject" name="improvement-request" value="theodinproject" class="suggestion">The Odin Project</label>
+                <label for="khanacademy"><input type="checkbox" id="khanacademy" name="improvement-request" value="khanacademy" class="suggestion">Khan Academy</label>
+                <label for="github"><input type="checkbox" id="github" name="improvement-request" value="github" class="suggestion">Github</label>
+                <label for="mdn"><input type="checkbox" id="mdn" name="improvement-request" value="mdn" class="suggestion">MDN Tutorial</label>
+                <label for="w3school"><input type="checkbox" id="w3school" name="improvement-request" value="w3school" class="suggestion">W3school</label>
+                <label for="stack-overflow"><input type="checkbox" id="stack-overflow" name="improvement-request" value="stack-overflow" class="suggestion">Stack Overflow</label>
+                <label for="youtube"><input type="checkbox" id="youtube" name="improvement-request" value="youtube" class="suggestion">YouTube</label>
+                <label for="reddit"><input type="checkbox" id="reddit" name="improvement-request" value="reddit" class="suggestion">Reddit</label>
+                <label for="writeanother"><input type="checkbox" id="writeanother" name="improvement-request" value="writeanother" class="suggestion">none of the above</label>
+            </fieldset>
+            
+            <!--SUGGESTIONS-->
+            <fieldset>
+                <label for="suggestion" >Any comments or suggestion ? <textarea id="suggestion" placeholder="Enter your comment here... Ir maybe you have another Websites you want to recommend out of the lists above.." name="suggestion" rows="4" cols="30" class="comments"></textarea></label>
+            </fieldset>
+            <input type="submit" id="submit">
+        </form>
+      </main>
+      <footer>
+          <p class="purpose">This form is done for FreeCodeCamp curriculum: Reponsive Web Design</p>
+          <p class="logofooter">@W-UD</p>
+      </footer>
+        
+    </body>
+  </html>
