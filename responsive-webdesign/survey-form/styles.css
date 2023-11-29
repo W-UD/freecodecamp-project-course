@@ -1,0 +1,122 @@
+body {
+    width: 100vw;
+    height: auto;
+    background-color: #EF7674;
+    color: white;
+    padding: 10x;
+}
+
+main {
+    margin-bottom: 5px;
+}
+
+#title {
+    text-align: center;
+    color: #DBFFF8;
+}
+
+#description {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #42FFD9;
+}
+
+#survey-form {
+    background-color: #C42348;
+    width: 90%;
+    margin: 5px auto;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 10px 10px;
+}
+
+label {
+    width: 100%;
+    display: block;
+    margin: 0.5rem auto;
+    text-align: justify;
+    color: #5FECD0;
+}
+
+input,
+select {
+    background-color: #FFFCF9;
+    border: 1px solid #C42348;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+legend {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 650;
+    text-align: justify;
+    margin-top: 2px;
+    color: #5FECD0;
+}
+
+.profile {
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+}
+
+.recommendation {
+    height: 80%;
+    display: inline-block;
+    margin: auto 10px auto auto;
+}
+
+.suggestion {
+    height: 100%;
+    margin-right: 10px;
+}
+
+#dropdown, #dropdown1{
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    font-size: 1em;
+    border: 2px solid #C42348;
+}
+
+.comments {
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    border-color: #C42348;
+    border-radius: 5px;
+}
+
+fieldset {
+  border: none;
+  margin: 5px auto;
+}
+
+#submit {
+    display: block;
+    background-color: #7678ED;
+    color: #FFFCF9;
+    width: 95%;
+    font-size: 17px;
+    margin: 0px auto 10px auto;
+    border-radius: 5px;   
+}
+
+footer {
+    text-align: center;
+    margin: 5px auto;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.purpose {
+    color: #42FFD9;
+}
+
+.logofooter {
+    margin-top: 1px;
+    font-size: 14px;
+    color: #DBFFF8;
+    font-weight: 700;
+}
